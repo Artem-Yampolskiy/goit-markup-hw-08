@@ -1,0 +1,92 @@
+.footer-page {
+  // display: flex;
+  background: $background-footer;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.underground {
+  // display: flex;
+}
+.address-list .link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.invitation {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-top: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  @include fonts-text($text-color-white);
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+}
+.social-link-footer {
+  @include social-icons($text-color-white);
+  background-color: rgba(255, 255, 255, 0.1);
+  &:hover,
+  &:focus {
+    transition: $timing-function;
+    background: $text-color-accent;
+  }
+}
+
+.social-icons {
+  fill: currentColor;
+}
+
+.address-list .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address-list .map {
+  color: #ffffff;
+}
+.footer-address {
+  margin-right: 70px;
+}
+.footer-form {
+  margin-left: auto;
+  // display: flex;
+  // flex-direction: column;
+}
+.footer-box-send {
+  // display: flex;
+}
+.btn-send {
+  // display: flex;
+  // margin-left: 12px;
+  padding: 13px 28px;
+  @extend %buttons;
+}
+.btn-send:hover {
+  @extend %buttons-hover-focus;
+}
+.send-icon {
+  fill: $text-color-white;
+  // margin-left: 10px;
+}
+.footer-box-send input {
+  // display: flex;
+  // width: 358px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: $background-footer;
+}

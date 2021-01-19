@@ -1,0 +1,35 @@
+@mixin fonts_padding-header($color) {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $color;
+}
+@mixin fonts-text($color) {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color;
+}
+@mixin logo-fonts($color) {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $color;
+  letter-spacing: 0.03em;
+}
+@mixin social-icons($color) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: $color;
+  border-radius: 50%;
+}

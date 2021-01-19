@@ -1,0 +1,51 @@
+.clients {
+  background: $text-color-white;
+}
+.clients .conteiner {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.list-clients {
+  margin: -15px;
+  display: flex;
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+}
+.item-clients {
+  width: calc(100% / 2 - 30px);
+  margin: 15px;
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 3 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 6 - 30px);
+  }
+}
+
+.link-clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // width: 100%;
+  height: 90px;
+  color: $icon-color;
+  border: 1px solid $icon-color;
+  border-radius: 4px;
+  &:hover,
+  &:focus {
+    transition: $timing-function;
+    color: $text-color-accent;
+    border: 1px solid $text-color-accent;
+  }
+}
+.clients-ikon {
+  fill: currentColor;
+}

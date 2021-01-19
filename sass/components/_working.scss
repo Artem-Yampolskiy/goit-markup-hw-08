@@ -1,0 +1,29 @@
+.working {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  background: var(--text-color-white);
+}
+.working-list-img {
+  display: flex;
+  justify-content: space-between;
+}
+.working-item {
+  position: relative;
+}
+.line-name {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 27px 15px;
+  background: rgba(47, 48, 58, 0.8);
+}
+.line-name h3 {
+  font-style: normal;
+  text-align: center;
+  @include fonts-text($text-color-white);
+}
+.working > .conteiner {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

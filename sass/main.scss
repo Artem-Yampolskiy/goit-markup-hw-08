@@ -1,0 +1,22 @@
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+
+@import "./base/common";
+@import "./base/conteiner";
+
+@import "./components/header";
+@import "./components/logo";
+
+@import "./components/hero";
+@import "./components/about";
+@import "./components/working";
+@import "./components/team";
+@import "./components/clients";
+
+@import "./components/footer";
+
+@import "./components/modal";
+
+@import "./components/portfolio";

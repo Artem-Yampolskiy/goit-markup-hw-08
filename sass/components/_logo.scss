@@ -1,0 +1,13 @@
+.logo-web {
+  @include logo-fonts($text-color-accent);
+}
+.logo-studio {
+  @include logo-fonts($text-color-black);
+}
+.footer-address .logo-web {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer-logo-studio {
+  @include logo-fonts($text-color-white);
+}

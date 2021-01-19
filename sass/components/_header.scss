@@ -1,0 +1,76 @@
+.header-page {
+  display: flex;
+  background: $text-color-white;
+  border-bottom: 1px solid #ececec;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: $text-color-accent;
+  transition: $timing-function;
+}
+.item {
+  display: block;
+}
+.nav-list .item {
+  position: relative;
+}
+.nav-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav-list .link {
+  display: block;
+  @include fonts_padding-header($text-color-black);
+}
+.nav-list .current {
+  color: $text-color-accent;
+}
+.nav-list .current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+/* adresnaya */
+
+.address-header {
+  margin-left: auto;
+}
+.address-list-up {
+  display: flex;
+  align-items: center;
+}
+.address-list-up .item:not(:last-child) {
+  margin-right: 30px;
+}
+.address-list-up .link {
+  display: block;
+  @include fonts_padding-header($text-color-grey);
+  &:hover,
+  &:focus {
+    color: $text-color-accent;
+    transition: $timing-function;
+    font-style: normal;
+  }
+}
+
+.svg-mail,
+.svg-phone {
+  padding: 0;
+  border: none;
+  fill: currentColor;
+  margin-right: 10px;
+  vertical-align: auto;
+}

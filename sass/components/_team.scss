@@ -1,0 +1,78 @@
+.team {
+  background: #f5f4fa;
+}
+.team .conteiner {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.team-list {
+  @media screen and (min-width: 768px) {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.team-card {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    width: calc(100% / 2 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 4 - 30px);
+  }
+  background: $text-color-white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.content-card {
+  padding: 30px 32px;
+}
+.content-card > h3 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  @extend %team-fonts;
+  color: $text-color-black;
+}
+.content-card > p {
+  margin-bottom: 16px;
+  font-weight: normal;
+  @extend %team-fonts;
+  color: $text-color-grey;
+}
+.social-list-card {
+  display: flex;
+  justify-content: center;
+}
+.social-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.social-link {
+  @include social-icons($icon-color);
+  &:hover,
+  &:focus {
+    transition: $timing-function;
+    background: $text-color-accent;
+    color: $text-color-white;
+  }
+}
+.svg-link-card {
+  fill: currentColor;
+  &:hover {
+    transition: $timing-function;
+    fill: currentColor;
+  }
+}
