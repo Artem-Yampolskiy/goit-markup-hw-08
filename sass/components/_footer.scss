@@ -1,11 +1,39 @@
+// footer-all
+
 .footer-page {
-  // display: flex;
   background: $background-footer;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+// .footer-page
 .underground {
-  // display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+.footer-contacts {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}
+//adresa
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    margin-right: 70px;
+  }
 }
 .address-list .link {
   font-style: normal;
@@ -15,18 +43,41 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.invitation {
-  display: inline-block;
-  margin-bottom: 20px;
-  padding-top: 12px;
-  font-family: Roboto;
-  font-style: normal;
-  @include fonts-text($text-color-white);
+.address-list .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address-list .map {
+  color: #ffffff;
+}
+
+// socseti
+.join {
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 .social-list {
   display: flex;
-  justify-content: space-between;
-  width: 206px;
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
+
+  // margin: -5px;
+  // width: 206px;
+}
+.invitation {
+  display: inline-block;
+  margin-bottom: 20px;
+  // padding-top: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  @include fonts-text($text-color-white);
 }
 .social-link-footer {
   @include social-icons($text-color-white);
@@ -37,56 +88,66 @@
     background: $text-color-accent;
   }
 }
-
 .social-icons {
   fill: currentColor;
 }
 
-.address-list .item:not(:last-child) {
-  margin-bottom: 9px;
-}
-.address-list .map {
-  color: #ffffff;
-}
-.footer-address {
-  margin-right: 70px;
-}
+// Forma
 .footer-form {
-  margin-left: auto;
-  // display: flex;
-  // flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    text-align: start;
+  }
 }
 .footer-box-send {
-  // display: flex;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 .btn-send {
-  // display: flex;
-  // margin-left: 12px;
-  padding: 13px 28px;
+  margin-left: auto;
+  margin-right: auto;
   @extend %buttons;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
+  //
 }
 .btn-send:hover {
   @extend %buttons-hover-focus;
 }
 .send-icon {
   fill: $text-color-white;
-  // margin-left: 10px;
+  margin-left: 10px;
 }
 .footer-box-send input {
-  // display: flex;
-  // width: 358px;
-  padding: 15px 16px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
-  align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: $background-footer;
 }
+// font-family: Roboto;
+// font-style: normal;
+// font-weight: normal;
+// display: flex;
+// align-items: center;
+// box-sizing: border-box;
+// filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
