@@ -1,5 +1,8 @@
 .hero {
-  height: 600px;
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
+  height: 400px;
   background: #2f303a;
   background-image: linear-gradient(
       to right,
@@ -12,22 +15,30 @@
   background-position: center;
 }
 .hero > .conteiner {
+  width: 390px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
   text-align: center;
-  height: 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 .hero-titel {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
   color: $text-color-white;
   margin-bottom: 30px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .hero-but {
-  // padding: 10px 32px;
   @extend %buttons;
   &:hover {
     @extend %buttons-hover-focus;
