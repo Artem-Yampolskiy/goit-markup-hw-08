@@ -4,9 +4,9 @@
 
     menuBtnref.addEventListener("click", () => {
         const expanded =
-            menuBtnref.getAttribute("aria-expended") === "true" || false;
+            menuBtnref.getAttribute("aria-expanded") === "true" || false;
         menuBtnref.classList.toggle("is-open");
-        menuBtnref.setAttribute("aria-expended", !expanded);
+        menuBtnref.setAttribute("aria-expanded", !expanded);
         mobileMenuRef.classList.toggle("is-open");
     });
 })();

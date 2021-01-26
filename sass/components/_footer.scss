@@ -67,14 +67,10 @@
   @media screen and (max-width: 767px) {
     justify-content: center;
   }
-
-  // margin: -5px;
-  // width: 206px;
 }
 .invitation {
   display: inline-block;
   margin-bottom: 20px;
-  // padding-top: 12px;
   font-family: Roboto;
   font-style: normal;
   @include fonts-text($text-color-white);
@@ -91,7 +87,6 @@
 .social-icons {
   fill: currentColor;
 }
-
 // Forma
 .footer-form {
   display: flex;
@@ -118,7 +113,6 @@
   @media screen and (min-width: 1200px) {
     margin-left: 12px;
   }
-  //
 }
 .btn-send:hover {
   @extend %buttons-hover-focus;
@@ -144,10 +138,3 @@
   color: rgba(255, 255, 255, 0.6);
   background-color: $background-footer;
 }
-// font-family: Roboto;
-// font-style: normal;
-// font-weight: normal;
-// display: flex;
-// align-items: center;
-// box-sizing: border-box;
-// filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

@@ -25,7 +25,7 @@
   color: $text-color-black;
   &:hover,
   &:focus {
-    color: $text-color-accent;
+    fill: $text-color-accent;
     transition: $timing-function;
     cursor: pointer;
   }
@@ -33,13 +33,14 @@
     display: none;
   }
 }
+
 .btn-close-menu {
   display: none;
 }
 .menu-btn.is-open .btn-close-menu {
   display: block;
 }
-.menu-btn.is-open .icon-menu {
+.menu-btn.is-open .address-menu {
   display: none;
 }
 .nav-menu {

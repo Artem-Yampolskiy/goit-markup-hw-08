@@ -18,20 +18,21 @@
             <nav class="nav-header">
                 <a href="" class="logo-web">Web<span class="logo-studio">Studio</span>
                 </a>
-                <button type="button" class="menu-btn is-open">
+                <button 
+                data-menu-button 
+                type="button" 
+                class="menu-btn" 
+                aria-expanded="false" 
+                aria-controls="nav-menu">
                     <svg 
                     width="25" 
                     height="25" 
-                    aria-label="переключатель мобильного меню"
-                    aria-expanded="false"
-                    aria-controls="nav-menu"
-                    data-menu-button>
-                        <use class="btn-close-menu" href="./icons/icon-new.svg#icon-close_menu"></use>
+                    aria-label="переключатель мобильного меню">
                         <use class="address-menu" href="./icons/icon-new.svg#icon-menu"></use>
-                        
+                        <use class="btn-close-menu" href="./icons/icon-new.svg#icon-close_menu"></use>                        
                     </svg>
                 </button>
-                <div class="nav-menu is-open" id="nav-menu" data-menu>
+                <div class="nav-menu " id="nav-menu" data-menu>
                     <ul class="nav-list">
                         <li class="item"><a class="link current" href="./index.html">Студия</a></li>
                         <li class="item"><a class="link" href="./portfolio.html">Портфолио</a></li>
@@ -118,15 +119,27 @@
                 <ul class="working-list-img">
                     <li class="working-item">
                         <div class="line-name"><h3>Десктопные приложения</h3></div>
-                        <img src="./images/work-img-1.jpg" alt="деятельность 1" width="370" height="294" />
+                        <img 
+                        src="./images/work/work-1/work-1@x.jpg" 
+                        alt="деятельность 1" width="370" height="294"
+                        srcset="./images/work/work-1/work-1@2x.jpg 2x" 
+                        />
                     </li>
                     <li class="working-item">
                         <div class="line-name"><h3>Мобильные приложения</h3></div>
-                        <img src="./images/work-img-2.jpg" alt="деятельность 2" width="370" height="294" />
+                        <img 
+                        src="./images/work/work-2/work-2@x.jpg" 
+                        alt="деятельность 2" width="370" height="294" 
+                        srcset="./images/work/work-2/work-2@2x.jpg 2x"
+                        />
                     </li>
                     <li class="working-item">
                         <div class="line-name"><h3>Дизайнерские решения</h3></div>
-                        <img src="./images/work-img-3.jpg" alt="деятельность 3" width="370" height="294" />
+                        <img 
+                        src="./images/work/work-3/work-3@x.jpg" 
+                        alt="деятельность 2" width="370" height="294" 
+                        srcset="./images/work/work-3/work-3@2x.jpg 2x" 
+                        />
                     </li>
                 </ul>            
             </div>                
@@ -136,7 +149,11 @@
                 <h2 class="section-name">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-card">
-                        <img src="./images/foto1.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+                        <img 
+                        src="./images/team/mob/team-mob-1/foto-1.jpg" 
+                        alt="Игорь Демьяненко" 
+                        srcset="./images/team/mob/team-mob-1/foto-1@2x.jpg 2x" 
+                        />
                         <div class="content-card">                            
                             <h3>Игорь Демьяненко</h3>
                             <p>Product Designer</p>
@@ -173,7 +190,11 @@
                         </div>
                     </li>
                     <li class="team-card">
-                        <img src="./images/foto2.jpg" alt="Ольга Репина" width="270" height="260" />
+                        <img 
+                        src="./images/team/mob/team-mob-2/foto-2.jpg" 
+                        alt="Ольга Репина" 
+                        srcset="./images/team/mob/team-mob-2/foto-2@2x.jpg 2x"
+                        />
                         <div class="content-card">                            
                             <h3>Ольга Репина</h3>
                             <p>Frontend Developer</p>
@@ -210,7 +231,11 @@
                         </div>
                     </li>
                     <li class="team-card">
-                        <img src="./images/foto3.jpg" alt="Николай Тарасов" width="270" height="260" />
+                        <img 
+                        src="./images/team/mob/team-mob-3/foto-3.jpg" 
+                        alt="Николай Тарасов"
+                        srcset="./images/team/mob/team-mob-3/foto-3@2x.jpg 2x"
+                        />
                         <div class="content-card">                            
                             <h3>Николай Тарасов</h3>
                             <p>Marketing</p>
@@ -247,7 +272,11 @@
                         </div>
                     </li>
                     <li class="team-card">
-                        <img src="./images/foto4.jpg" alt="Михаил Ермаков" width="270" height="260" />
+                        <img 
+                        src="./images/team/mob/team-mob-4/foto-4.jpg" 
+                        alt="Михаил Ермаков" 
+                        srcset="./images/team/mob/team-mob-4/foto-4@2x.jpg 2x" 
+                        />
                         <div class="content-card">                            
                             <h3>Михаил Ермаков</h3>
                             <p>UI Designer</p>
